@@ -17,7 +17,11 @@ const Home = () => {
             key={service.id}
             ></Card>)
         }
-        <button><Link to='/service' className='btn btn-ghost bg-primary text-white me-auto'>See all</Link></button>
+       <div className=' align-center'>
+       <Link to='/service'>
+        <button className='btn btn-ghost bg-primary text-white'>See all</button>
+        </Link>
+       </div>
     </div>
     );
 };
