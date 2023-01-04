@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../authProvider/AuthProvider";
 
 const Login = () => {
-  const { Login } = useState(null);
+  const { Login } = useContext(AuthContext);
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = e.target;
