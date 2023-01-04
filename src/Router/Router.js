@@ -1,3 +1,5 @@
+import LogIn from "../Authentication/Login/Login";
+import SignUp from "../Authentication/Signup/SignUp";
 import Details from "../Components/Details/Details";
 import Home from "../Components/Home/Home";
 import Blog from "../Components/Shared/Blog/Blog";
@@ -23,10 +25,18 @@ export const router = createBrowserRouter([
                 path:'/blog',
                 element:<Blog></Blog>
             },
+            // {
+            //     path:'/details/:id',
+            //     element:<Details></Details>,
+            //     loader:({params})=>fetch(``)
+            // }
             {
-                path:'/details/:id',
-                element:<Details></Details>,
-                loader:({params})=>fetch(``)
+                path:'/login',
+                element:<LogIn></LogIn>
+            },
+            {
+                path:'/signup',
+                element:<SignUp></SignUp>
             }
         ]
     }
