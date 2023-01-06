@@ -1,10 +1,11 @@
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../authProvider/AuthProvider";
 
 const Login = () => {
   const { Login } = useContext(AuthContext);
+  
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -21,13 +22,14 @@ const Login = () => {
         navigate(from,{replace : true});
       })
       .catch((error) => console.error(error));
-    form.reset();
+      form.reset();
   };
+
   return (
     <div className="mx-auto my-10 p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-sky-800 dark:border-green-700">
       <form onSubmit={handleSignIn} className="space-y-3" action="#">
         <h5 className="text-xl font-medium text-gray-900 dark:text-white">
-          Sign up to Wedding.com
+          Login to Wedding.com
         </h5>
         <div>
           <label

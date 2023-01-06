@@ -20,19 +20,24 @@ const Header = () => {
         </Link>
       </li>
       <li>
+        <Link to="/addservice" className="text-xl">
+          Add Services
+        </Link>
+      </li>
+      <li>
         <Link to="/service" className="text-xl">
           Services
         </Link>
       </li>
       <li>
-        <Link to="/" className="text-xl">
+        <Link to="/blog" className="text-xl">
           Blog
         </Link>
       </li>
       {user?.email ? (
         <>
           <li>
-            <button onClick={handleLogOut} className='text-xl'>
+            <button onClick={handleLogOut} className="text-xl">
               singOut
             </button>
           </li>
@@ -57,7 +62,6 @@ const Header = () => {
   return (
     <div className="bg-success">
       <div className=" flex justify-between text-primary-content items-center max-w-screen-xl mx-auto">
-      
         <div>
           <Link className="btn btn-ghost normal-case text-xl">
             <img
@@ -67,11 +71,10 @@ const Header = () => {
             />
             <span className="text-3xl font-bold font-serif">Wedding.Com</span>
           </Link>
-          
         </div>
         <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal p-0">{menuItems}</ul>
-          </div>
+          <ul className="menu menu-horizontal p-0">{menuItems}</ul>
+        </div>
       </div>
     </div>
   );

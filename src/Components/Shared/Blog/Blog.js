@@ -59,7 +59,7 @@ const Blog = () => {
           mostly abbreviated as JS. It can be said that Javascript is the
           updated version of the ECMA script. Javascript is a high-level
           programming language that uses the concept of Oops but it is based on
-          prototype inheritance.{" "}
+          
         </p>
       </div>
 

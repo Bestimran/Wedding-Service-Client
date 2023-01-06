@@ -1,41 +1,35 @@
 [
     {
-        "id":1,
         "name":"Booking range rover for Wedding",
         "price":5000,
         "img":"https://i.ibb.co/bgkLTS2/rang.w[ebp",
         "description":"Nothing says classic like the perfect wedding limo service for your big day. This includes pricing, contact information, and any extra services offered.Check out Wedding Car Hire Services Before You Finalize Your Wedding Transportation Company"
     },
     {
-        "id":2,
         "name": "Planning the honeymoon",
         "price":10000,
         "img":"https://i.ibb.co/zNfThtY/honeymoon.webp",
         "description":"Lake Palace Udaipur is the signature icon of Udaipur, the city of lakes. A former summer palace known as ‘Jag Niwas’ of the Mewar dynasty, has now become one of the most luxurious hotel properties to stay at in Udaipur. Established right in the middle of man-made lake Pichola, "
     },
     {
-        "id":3,
         "name":"Wedding fashion",
         "price":"15000",
         "img":"https://i.ibb.co/qRrzZJK/fasion.webp",
         "description":"If you are still not sure about what to pick for your pre-bridal function experiment with these trending wedding gown designs. Take inspiration from these ten gown designs before you buy one for your special occasion."
     },
     {
-        "id":4,
         "name":"Health and beauty",
         "price":10000,
         "img":"https://i.ibb.co/5hpWYWr/beauty.webp",
         "description":"You're beautiful and everybody is aware of that, but wedding planning can be a hectic process. We'll guide you through all the do's and don'ts so that your inner beauty reflects on the outside too."
     },
     {
-        "id":5,
         "name":"Wedding Stage Decoration",
         "price":20000,
         "img":"https://i.ibb.co/zZ7BWZN/stage.webp",
         "description":"Want some help in decorating your stage? Use this 6 ideas for wedding stage decoration to ensure that the focal point of your festivities pops in all of your pictures."
     },
     {
-        "id":6,
         "name":"Wedding Photographers",
         "price":15000,
         "img":"https://i.ibb.co/bFHqpgQ/photo.webp",
