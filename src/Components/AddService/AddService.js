@@ -18,7 +18,7 @@ const AddService = () => {
       description,
     };
 
-    fetch(`http://localhost:5000/addservice/`, {
+    fetch(`https://car-service-server-beta.vercel.app/addservice/`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -44,7 +44,7 @@ const AddService = () => {
         <form onSubmit={handleSubmitService} className="shadow-2xl">
           <div className="mx-10">
             <input
-              className="border-2 shadow-white border-red-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
+              className="border-2 shadow-white border-green-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
               type="text"
               name="serviceName"
               placeholder="Enter Service Name here..."
@@ -54,7 +54,7 @@ const AddService = () => {
           </div>
           <div className="mx-10">
             <input
-              className="border-2 border-red-300 lg:w-1/2 w-full  py-3 px-3 font-bold my-3 rounded-lg"
+              className="border-2 border-green-300 lg:w-1/2 w-full  py-3 px-3 font-bold my-3 rounded-lg"
               type="text"
               name="price"
               placeholder="Enter Service Fee..."
@@ -63,7 +63,7 @@ const AddService = () => {
           </div>
           <div className="mx-10">
             <input
-              className="border-2 border-red-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
+              className="border-2 border-green-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
               type="text"
               name="image"
               placeholder="Enter a photoURL...."
@@ -72,7 +72,7 @@ const AddService = () => {
           </div>
           <div className="mx-10">
             <textarea
-              className="border-2 resize-none border-red-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
+              className="border-2 resize-none border-green-300 lg:w-1/2 w-full py-3 px-3 font-bold my-3 rounded-lg"
               name="description"
               placeholder="Service Description Here...."
               id=""
@@ -83,7 +83,7 @@ const AddService = () => {
           <div>
             <button
               type="submit"
-              className="btn btn-primary my-5 px-10 lg:text-3xl text-2xl "
+              className="btn btn-success my-5 px-10 lg:text-3xl text-2xl "
             >
               Submit service
             </button>

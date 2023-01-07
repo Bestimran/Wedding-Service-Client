@@ -11,12 +11,12 @@ const Details = () => {
   console.log(id);
   const { description, price, name, img } = details;
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://car-service-server-beta.vercel.app/services/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, [id]);
   useEffect(() => {
-    fetch(`http://localhost:5000/review/${id}`)
+    fetch(`https://car-service-server-beta.vercel.app/review/${id}`)
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [id]);

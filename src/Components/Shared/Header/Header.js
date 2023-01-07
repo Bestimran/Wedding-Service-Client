@@ -19,16 +19,13 @@ const Header = () => {
           Home
         </Link>
       </li>
-      <li>
-        <Link to="/addservice" className="text-xl">
-          Add Services
-        </Link>
-      </li>
+
       <li>
         <Link to="/service" className="text-xl">
           Services
         </Link>
       </li>
+      <li>{user?.displayName}</li>
       <li>
         <Link to="/blog" className="text-xl">
           Blog
@@ -36,6 +33,11 @@ const Header = () => {
       </li>
       {user?.email ? (
         <>
+          <li>
+            <Link to="/addservice" className="text-xl">
+              Add Services
+            </Link>
+          </li>
           <li>
             <button onClick={handleLogOut} className="text-xl">
               singOut
